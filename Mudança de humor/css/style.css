@@ -19,8 +19,8 @@ body{
 
 #home button{
     background:transparent;
-    border-radius:5px;
-    border:1px solid #F00A0D;
+    border-radius:10px;
+    border:2px solid #F00A0D;
     padding: 15px;
     display: block;
     margin: 100px auto;
