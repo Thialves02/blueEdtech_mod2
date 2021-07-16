@@ -7,43 +7,52 @@
     <title>Humores</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
     <link rel="shortcut icon" href="img/favicon.jpg" />
+    <script src="js/main.js"></script>
 </head>
-<body>
+<body id="body">
     <div id="eleven">
         <h1>
             <a href="index.html">
                 ELEVEN
             </a>
         </h1>
-        <img src="img/rage.png">
-
+        <div id="imagens">
+            <div id="humor_home">
+                <img src="img/humor_home.jpg" style="max-width:900px; height: 500px;" >
+            </div>
+            <div id="angry" class="display_none">
+                <img src="img/angry.jpg" style="max-width:900px; height: 500px;" >
+            </div>
+            <div id="rage" class="display_none">
+                <img src="img/rage.png" style="max-width:900px; height: 500px;">
+            </div>
+            <div id="happy" class="display_none">
+                <img src="img/happy.jpg" style="max-width:900px; height: 500px;;">
+            </div>
+            <div id="sad" class="display_none">
+                <img src="img/sad.jpg" style="max-width:900px; height: 500px;">
+            </div>
+        </div>
+        
         <div id="botoes">
-            <div class="happy">
-                <button type="button">
-                    <a href = "">
-                        HAPPY
-                    </a>
+            <div class="happy" >
+                <button type="button" onclick="show_happy();" ondblclick="home()">                   
+                        HAPPY                    
                 </button>
             </div>
             <div class="sad">
-                <button type="button">
-                    <a href = "">
-                        SAD
-                    </a>
+                <button type="button" onclick="show_sad();" ondblclick="home()">                    
+                        SAD                    
                 </button>
             </div>
-            <div class="angry">
-                <button type="button">
-                    <a href = "">
+            <div class="angry"  >
+                <button type="button" onclick="show_angry();" ondblclick="home()">                   
                         ANGRY
-                    </a>
                 </button>
             </div>
-            <div class="rage">
-                <button type="button">
-                    <a href = "">
+            <div class="rage" >
+                <button type="button" onclick="show_rage();" ondblclick="home()">
                         RAGE
-                    </a>
                 </button>
             </div>
         </div>
