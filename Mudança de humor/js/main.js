@@ -1,45 +1,46 @@
-function show_happy(){
-    document.getElementById('happy').style.display = 'block';
-    document.getElementById('sad').style.display = 'none';
-    document.getElementById('angry').style.display = 'none';
-    document.getElementById('rage').style.display = 'none';
-    document.getElementById('humor_home').style.display = 'none';
-    document.getElementById('body').style.backgroundColor = '#533E14';
-}
+const elementoImg = document.querySelector('#humor_home')
+let happyBtn = document.querySelector('.happy')
+let sadBtn = document.querySelector('.sad')
+let angryBtn = document.querySelector('.angry')
+let rageBtn = document.querySelector('.rage')
 
-function show_sad(){
-    document.getElementById('happy').style.display = 'none';
-    document.getElementById('sad').style.display = 'block';
-    document.getElementById('angry').style.display = 'none';
-    document.getElementById('rage').style.display = 'none';
-    document.getElementById('humor_home').style.display = 'none';
-    document.getElementById('body').style.backgroundColor = '#7845C7';
-}
 
-function show_angry(){
-    document.getElementById('happy').style.display = 'none';
-    document.getElementById('sad').style.display = 'none';
-    document.getElementById('angry').style.display = 'block';
-    document.getElementById('rage').style.display = 'none';
-    document.getElementById('humor_home').style.display = 'none';
-    document.getElementById('body').style.backgroundColor = '#B8331F';
-}
+happyBtn.addEventListener('click',()=>{
+    elementoImg.src = 'img/happy.jpg'
+    document.querySelector('body').style.backgroundColor = '#533E14';
+})
 
-function show_rage(){
-    document.getElementById('happy').style.display = 'none';
-    document.getElementById('sad').style.display = 'none';
-    document.getElementById('angry').style.display = 'none';
-    document.getElementById('rage').style.display = 'block';
-    document.getElementById('humor_home').style.display = 'none';
-    document.getElementById('body').style.backgroundColor = '#db0f00';
-}
+sadBtn.addEventListener('click',()=>{
+    elementoImg.src = './img/sad.jpg'
+    document.querySelector('body').style.backgroundColor = '#7845C7';
+})
 
-function home(){
-    document.getElementById('happy').style.display = 'none';
-    document.getElementById('sad').style.display = 'none';
-    document.getElementById('angry').style.display = 'none';
-    document.getElementById('rage').style.display = 'none';
-    document.getElementById('humor_home').style.display = 'block';
-    document.getElementById('body').style.backgroundColor = '#000103';
-}
+angryBtn.addEventListener('click',()=>{
+    elementoImg.src = './img/angry.jpg'
+    document.querySelector('body').style.backgroundColor = '#B8331F';
+})
 
+rageBtn.addEventListener('click',()=>{
+    elementoImg.src = './img/rage.png'
+    document.querySelector('body').style.backgroundColor = '#db0f00'
+})
+
+happyBtn.addEventListener("dblclick", ()=>{
+    elementoImg.src = 'img/humor_home.jpg'
+    document.querySelector('body').style.backgroundColor = '#000103'
+});
+
+sadBtn.addEventListener("dblclick", ()=>{
+    elementoImg.src = 'img/humor_home.jpg'
+    document.querySelector('body').style.backgroundColor = '#000103'
+});
+
+angryBtn.addEventListener("dblclick", ()=>{
+    elementoImg.src = 'img/humor_home.jpg'
+    document.querySelector('body').style.backgroundColor = '#000103'
+});
+
+rageBtn.addEventListener("dblclick", ()=>{
+    elementoImg.src = 'img/humor_home.jpg'
+    document.querySelector('body').style.backgroundColor = '#000103'
+});
