@@ -7,6 +7,7 @@
     <title>Portifolio</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='assets/css/style.css'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -44,19 +45,19 @@
         <!-- <div >
             <img src="assets/img/82343110-removebg-preview (1).png" alt="foto">
         </div> -->
-        <div>
+        <div >
             <p>
                 Desde criança sempre fui apaixonado pela tecnologia, com o tempo essa conexão cresceu ainda mais.
                 Acredito que a tecnologia pode mudar a realidade de várias pessoas e fazer com que o mundo seja um lugar
                 melhor.
                 <br>No momento sou estudante da Blue Edtech e estou focado em me tornar um desenvolvedor Fullstack.
                 Tenho conhecimentos
-                em Python, Html, CSS, Javascript, Bootstrap e MySQL. Tenho inglês intermediário.
+                em Python, Html, CSS, Javascript, Bootstrap e MySQL. Possuo inglês intermediário.
             </p>
         </div>
     </section>
-    <section id="projetos">
-        <div>
+    <section id="projetos" data-aos="fade-zoom-in" data-aos-duration="2000">
+        <div >
             <img src="assets/img/the_island.png">
             <h2>The Island</h2>
             <p>Com muito empenho e dedicação, eu e o Fabio Henrique De Oliveira concluimos nosso jogo para o módulo de
@@ -75,19 +76,21 @@
             <button>Veja mais</button>
         </div>
         <div>
-            <img src="assets/img/download.png">
-            <h2>Projeto 1</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium praesentium culpa iste, voluptatem
-                officiis sunt. Molestias, recusandae incidunt nostrum praesentium dolore labore, delectus reiciendis
-                explicabo minus quaerat eum inventore velit!</p>
+            <img src="assets/img/calculadora.png">
+            <h2>Calculadora</h2>
+            <p>Projeto para por os ensinamentos do módulo 2 da Blue Edtech sobre programação Web em prática. Nessá página foram utilizados HTML,
+                CSS e Javascript. A calculadora conta com todas as funções básicas de uma calculadora (Soma, divisão, multiplicação e subtração) 
+                e também conta com mensagens de erro dependendo da escolha feita pelo usuário.
+            </p>
             <button>Veja mais</button>
         </div>
         <div>
-            <img src="assets/img/download.png">
-            <h2>Projeto 1</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium praesentium culpa iste, voluptatem
-                officiis sunt. Molestias, recusandae incidunt nostrum praesentium dolore labore, delectus reiciendis
-                explicabo minus quaerat eum inventore velit!</p>
+            <img src="assets/img/to_do_list.png">
+            <h2>To do list</h2>
+            <p>Projeto do lista de tarefas "To do list" feito com intuito de treinar meus conhecimentos, facilitar e organizar as tarefas do dia a dia.
+                A página foi montada com HTML5,CSS3 
+                e Javascript. A página também é "protegida", impedindo que o usuário realize
+                 opções inválidas através de mensagens de erro que foram feitas utilizando a biblioteca SweetAlert</p>
             <button>Veja mais</button>
         </div>
     </section>
@@ -129,9 +132,10 @@
         </div>
 
     </section>
+    
     <section id="contato">
-        <div id="redes">
-            <h3>Se conecte comigo</h3>
+        <div id="redes" >
+            <h3 >Se conecte comigo</h3>
             <div id="icons">
                 <a href="https://www.linkedin.com/in/thiago-roberto/" target="_blank"><i class="fa fa-linkedin-square"aria-hidden="true"></i></a>
                 <a href="https://github.com/Thialves02" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
@@ -167,6 +171,11 @@
    
       </footer>
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  
     <script src="assets/js/main.js"></script>
 </body>
 

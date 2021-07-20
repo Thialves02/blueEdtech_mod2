@@ -1,6 +1,6 @@
 let inputNome = document.querySelector('#nome')
 let inputEmail = document.querySelector('#email')
-let textareaMensagem = document.querySelector('#texarea')
+let textareaMensagem = document.querySelector('#mensagem')
 let btnEnviar = document.querySelector('#enviar')
 
 inputNome.addEventListener('keyup',() =>{
@@ -13,9 +13,9 @@ inputNome.addEventListener('keyup',() =>{
 
 inputEmail.addEventListener('keyup',() =>{
     if(inputEmail.value.indexOf('@') == -1 || inputEmail.value.indexOf('.') == -1){
-        inputEmail.value.style.borderColor = 'red'
+        inputEmail.style.borderColor = 'red'
     } else{
-        inputEmail.value.style.borderColor = 'green'
+        inputEmail.style.borderColor = 'green'
     }
 })
 

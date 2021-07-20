@@ -102,6 +102,7 @@ section#projetos div img{
    margin: auto;
    width: 300px;
    height:200px;
+   border-radius: 15px;
 }
 
 section#projetos div h2{
@@ -135,7 +136,6 @@ section#projetos div button{
 section#projetos div button:hover{
    background-color: #3359ec;
    color: #fff;
-   transform: scale(1.2);
 }
 
 section#habilidades{
@@ -168,6 +168,8 @@ section#habilidades div span#python{
    padding: .3rem;
    border-radius: 1rem;
    width: 60%;
+   animation-name: barra_python;
+   animation-duration:3s;
 }
 
 section#habilidades div span#html{
@@ -177,6 +179,8 @@ section#habilidades div span#html{
    padding: .3rem;
    border-radius: 1rem;
    width: 50%;
+   animation-name: barra_html_css;
+   animation-duration:3s;
 }
 
 section#habilidades div span#css{
@@ -186,6 +190,8 @@ section#habilidades div span#css{
    padding: .3rem;
    border-radius: 1rem;
    width: 50%;
+   animation-name: barra_html_css;
+   animation-duration:3s;
 }
 
 section#habilidades div span#bootstrap{
@@ -195,6 +201,8 @@ section#habilidades div span#bootstrap{
     padding: .3rem;
     border-radius: 1rem;
     width: 30%;
+    animation-name: barra_bootstrap_js;
+    animation-duration:3s;
  }
 
 section#habilidades div span#javascript{
@@ -204,6 +212,8 @@ section#habilidades div span#javascript{
     padding: .3rem;
     border-radius: 1rem;
     width: 30%;
+    animation-name: barra_bootstrap_js;
+    animation-duration:3s;
  }
 
  section#habilidades div span#mysql{
@@ -213,6 +223,8 @@ section#habilidades div span#javascript{
     padding: .3rem;
     border-radius: 1rem;
     width: 20%;
+    animation-name: barra_mysql;
+    animation-duration:3s;
  }
 
  section#habilidades div span#flask{
@@ -314,10 +326,54 @@ section#contato div#form form button{
    cursor: pointer;
    transition: .6s ease-out;
    width: 40%;
+   
 }
 
 section#contato div#form form button:hover{
    background-color: #3359ec;
    color: #fff;
-   transform: scale(1.2);
+}
+
+@keyframes barra_python{
+
+   from{
+      width:0
+   }
+
+   to{
+      width:60%;
+   }
+}
+
+@keyframes barra_html_css{
+
+   from{
+      width:0
+   }
+
+   to{
+      width:50%;
+   }
+}
+
+@keyframes barra_bootstrap_js{
+
+   from{
+      width:0
+   }
+
+   to{
+      width:30%;
+   }
+}
+
+@keyframes barra_mysql{
+
+   from{
+      width:0
+   }
+
+   to{
+      width:20%;
+   }
 }
