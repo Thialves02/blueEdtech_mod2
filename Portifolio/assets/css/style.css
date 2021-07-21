@@ -31,6 +31,11 @@ nav ul li{
 nav ul li a{
    text-decoration: none;
    color: #fff;
+   transition:.5s;
+}
+
+nav ul li a:hover{
+   color: #00125a;
 }
 
 header{
@@ -46,13 +51,13 @@ header div#img-rocket {
 }
 
 header div p{
-   font-size: 2vw;
+   font-size: 2rem;
    font-weight: 700;
    color: #3359ec;
 }
 
 header div span{
-   font-size: 1vw;
+   font-size: 1.3rem;
    font-weight: 500;
    color: #0066ff;
 }
@@ -78,7 +83,7 @@ section#sobre-mim div img{
 }
 
 section#sobre-mim div p{
-   font-size: 1.1vw;
+   font-size: 1.1rem;
    text-align: justify;
    color: #fff;
    line-height: 2.5rem;
@@ -123,7 +128,7 @@ section#projetos div button{
    background-color: #fff;
    color: #3359ec;
    padding: 1rem;
-   font-size: .8vw;
+   font-size: 0.8rem;
    font-weight: 600;
    border-radius: .5rem;
    display: block;
@@ -131,6 +136,10 @@ section#projetos div button{
    margin-top: 2rem;
    cursor: pointer;
    transition: .6s ease-out;
+}
+
+section#projetos div a{
+   text-decoration: none
 }
 
 section#projetos div button:hover{
@@ -147,6 +156,13 @@ section#habilidades h2{
    text-align: center;
    font-size: 2.5rem;
    margin-bottom: 2rem;
+}
+
+section#habilidades h3{
+   text-align: center;
+   font-size: 2.5rem;
+   margin-bottom: 2rem;
+   margin-top:100px;
 }
 
 section#habilidades p{
@@ -235,6 +251,51 @@ section#habilidades div span#javascript{
     border-radius: 1rem;
  }
 
+ section#habilidades div span#flask{
+   background-color: #3359ec;
+   color: #fff;
+   text-align: center;
+   padding: .3rem;
+   border-radius: 1rem;
+}
+
+section#habilidades div span#comunicacao{
+   background-color: #3359ec;
+   color: #fff;
+   text-align: center;
+   padding: .3rem;
+   border-radius: 1rem;
+   width: 70%;
+}
+
+section#habilidades div span#grupo{
+   background-color: #3359ec;
+   color: #fff;
+   text-align: center;
+   padding: .3rem;
+   border-radius: 1rem;
+   width: 80%;
+}
+
+section#habilidades div span#organizacao{
+   background-color: #3359ec;
+   color: #fff;
+   text-align: center;
+   padding: .3rem;
+   border-radius: 1rem;
+   width: 85%;
+}
+
+section#habilidades div span#ingles{
+   background-color: #3359ec;
+   color: #fff;
+   text-align: center;
+   padding: .3rem;
+   border-radius: 1rem;
+   width: 60%;
+}
+
+
 /* Seção de contato */
 
 section#contato {
@@ -318,7 +379,7 @@ section#contato div#form form button{
    background-color: #fff;
    color: #3359ec;
    padding: 1rem;
-   font-size: .8vw;
+   font-size: 1rem;
    font-weight: 600;
    border-radius: .5rem;
    display: block;
@@ -326,12 +387,22 @@ section#contato div#form form button{
    cursor: pointer;
    transition: .6s ease-out;
    width: 40%;
-   
 }
 
 section#contato div#form form button:hover{
    background-color: #3359ec;
    color: #fff;
+}
+footer div#rodape{
+   background-color: #3359ec;
+   color:rgb(255, 255, 255);
+}
+footer div#rodape h1{
+   display: block;
+   text-align: center;
+   font-size:1.2rem;
+   padding:1rem;
+   justify-content: center;
 }
 
 @keyframes barra_python{
@@ -376,4 +447,109 @@ section#contato div#form form button:hover{
    to{
       width:20%;
    }
+}
+
+.flipswitch {
+   position: relative;
+   width: 80px;
+   margin-top: 14px;
+   
+ }
+ .flipswitch input[type=checkbox] {
+   display: none;
+ }
+ .flipswitch-label {
+   display: block;
+   overflow: hidden;
+   cursor: pointer;
+   border: 2px solid #999999;
+   border-radius: 50px;
+ }
+ .flipswitch-inner {
+   width: 200%;
+   margin-left: -100%;
+   transition: margin 0.3s ease-in 0s;
+ }
+ .flipswitch-inner:before, .flipswitch-inner:after {
+   float: left;
+   width: 50%;
+   height: 24px;
+   padding: 0;
+   line-height: 24px;
+   font-size: 18px;
+   color: white;
+   font-family: Trebuchet, Arial, sans-serif;
+   font-weight: bold;
+   box-sizing: border-box;
+ }
+ .flipswitch-inner:before {
+   content: "ON";
+   padding-left: 12px;
+   background-color: #000000;
+   color: #FFFFFF;
+ }
+ .flipswitch-inner:after {
+   content: "OFF";
+   padding-right: 12px;
+   background-color: #FFFFFF;
+   color: #000000;
+   text-align: right;
+ }
+
+ .flipswitch-cb:checked + .flipswitch-label .flipswitch-inner {
+   margin-left: 0;
+ }
+ .flipswitch-cb:checked + .flipswitch-label .flipswitch-switch {
+   right: 0;
+ }
+
+ @media only screen and (max-width: 375px){
+   header{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 5rem;
+   }
+   header div p{
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #3359ec;
+   }
+   header div span{
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #0066ff;
+   }
+   header div#img-rocket{
+      width:300%;
+   }
+   header div#img-rocket img{
+      width: 100%;
+      margin: 0;
+      padding: 0;
+   }
+   nav{
+      font-size:.6rem;
+   }
+   .flipswitch {
+      position: relative;
+      width: 0px;
+      margin-top: 14px;
+      
+    }
+    section#habilidades{
+      padding: 3rem 2rem;
+      background-color: #d7e7ff;
+   }
+   section#contato {
+      padding: 3rem 2rem; /* Sentido horario: Cima, direita , baixo, esquerda */
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; /* Quebra o conteúdo para a próxima linha caso não haja mais espaço para esse conteúdo na tela */
+   }
+
+   section#contato div#form form{
+      width: 80%;
+   }
+   
 }

@@ -29,13 +29,22 @@
             <li>
                 <a href="#contato">Contato</a>
             </li>
-        </ul>
+
+
+            <div class="flipswitch">
+                <input type="checkbox" name="flipswitch" class="flipswitch-cb" id="fs" >
+                <label class="flipswitch-label" for="fs">
+                    <div class="flipswitch-inner"></div>
+                    <div class="flipswitch-switch"></div>
+                </label>
+            </div>
+        </ul> 
+        
     </nav>
     <header>
         <div>
-            <p>"Faça o teu melhor, na condição que você tem, enquanto você não tem condições melhores, para fazer melhor
-                ainda!"</p>
-            <span>Mario Sergio Cortella</span>
+            <p> “Você pode encarar um erro como uma besteira a ser esquecida, ou como um resultado que aponta uma nova direção”</p>
+            <span>Steve Jobs</span>
         </div>
         <div id="img-rocket">
             <img src="assets/img/To the stars-cuate.png" alt="Foguete não tem ré">
@@ -64,7 +73,7 @@
                 lógica de programação da Blue EdTech. O usuário tem a opção de escolher entre português e inglês no
                 inicio do jogo e também tem a opção de ver tutoriais. O jogo conta com diversos tipos de mortes
                 customizados e com um Easter Egg.</p>
-            <button>Veja mais</button>
+                <a href="https://github.com/Thialves02/The_Island" target="_blank"><button>Veja mais</button></a>
         </div>
         <div>
             <img src="assets/img/bluemusic.png">
@@ -73,7 +82,7 @@
                 construção e receberá atualizações constantes conforme a evolução dos meus conhecimentos.
                 Agradecimento ao professor Thiago Lima que realizou uma live para nos ensinar como foi feita a montagem
                 do site passo a passo.</p>
-            <button>Veja mais</button>
+                <a href="https://github.com/Thialves02/BlueMusic" target="_blank"><button>Veja mais</button></a>
         </div>
         <div>
             <img src="assets/img/calculadora.png">
@@ -82,7 +91,7 @@
                 CSS e Javascript. A calculadora conta com todas as funções básicas de uma calculadora (Soma, divisão, multiplicação e subtração) 
                 e também conta com mensagens de erro dependendo da escolha feita pelo usuário.
             </p>
-            <button>Veja mais</button>
+            <a href="https://github.com/Thialves02/calculadora" target="_blank"><button>Veja mais</button></a>
         </div>
         <div>
             <img src="assets/img/to_do_list.png">
@@ -91,11 +100,11 @@
                 A página foi montada com HTML5,CSS3 
                 e Javascript. A página também é "protegida", impedindo que o usuário realize
                  opções inválidas através de mensagens de erro que foram feitas utilizando a biblioteca SweetAlert</p>
-            <button>Veja mais</button>
+                 <a href="https://github.com/Thialves02/toDoList" target="_blank"><button>Veja mais</button></a>
         </div>
     </section>
     <section id="habilidades">
-        <h2>Habilidades Técnicas</h2>
+        <h2>Hard Skills</h2>
         <p>Python</p>
         <div>
             <span id="python">60%</span>
@@ -131,6 +140,27 @@
             <span id="flask">0%</span>
         </div>
 
+        <h3>Soft Skills</h3>
+
+        <p>Organização</p>
+        <div>
+            <span id="organizacao">85%</span>
+        </div>
+
+        <p>Trabalho em grupo</p>
+        <div>
+            <span id="grupo">80%</span>
+        </div>
+
+        <p>Comunicação</p>
+        <div>
+            <span id="comunicacao">70%</span>
+        </div>
+
+        <p>Inglês</p>
+        <div>
+            <span id="ingles">60%</span>
+        </div>
     </section>
     
     <section id="contato">
@@ -168,7 +198,9 @@
       <!-- Fim do Contato -->
    
       <footer>
-   
+            <div id="rodape">
+                <h1>Todos direitos reservados &copy;</h1>
+            </div>
       </footer>
     </section>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
