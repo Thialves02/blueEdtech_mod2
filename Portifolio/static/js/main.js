@@ -28,9 +28,7 @@ textareaMensagem.addEventListener('keyup',() =>{
     }
 })
 
-btnEnviar.addEventListener('click',() =>{
-    alert('Formulario enviado com sucesso!')
-})
+
 
 checkbox.addEventListener('change',()=>{
     if (checkbox.checked) {
@@ -50,3 +48,14 @@ checkbox.addEventListener('change',()=>{
     
 })
 
+btnEnviar.addEventListener('click', () => {
+    /* Pega a div de carregamento */
+    let carregamento = document.querySelector('#carregamento')
+    /* Mostra a div de carregamento, adicionando o 'flex' ao display */
+    carregamento.style.display = 'flex'
+ 
+    /* Pega o Form */
+    let form = document.querySelector('form')
+    /* Esconde o Form, mudando o display pra 'none' */
+    form.style.display = 'none'
+ })
