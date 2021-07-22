@@ -6,7 +6,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Portifolio</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='static/css/style.css'>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -47,7 +47,7 @@
             <span>Steve Jobs</span>
         </div>
         <div id="img-rocket">
-            <img src="assets/img/To the stars-cuate.png" alt="Foguete não tem ré">
+            <img src="static/img/To the stars-cuate.png" alt="Foguete não tem ré">
         </div>
     </header>
     <section id="sobre-mim">
@@ -67,7 +67,7 @@
     </section>
     <section id="projetos" data-aos="fade-zoom-in" data-aos-duration="2000">
         <div >
-            <img src="assets/img/the_island.png">
+            <img src="static/img/the_island.png">
             <h2>The Island</h2>
             <p>Com muito empenho e dedicação, eu e o Fabio Henrique De Oliveira concluimos nosso jogo para o módulo de
                 lógica de programação da Blue EdTech. O usuário tem a opção de escolher entre português e inglês no
@@ -76,7 +76,7 @@
                 <a href="https://github.com/Thialves02/The_Island" target="_blank"><button>Veja mais</button></a>
         </div>
         <div>
-            <img src="assets/img/bluemusic.png">
+            <img src="static/img/bluemusic.png">
             <h2>Blue Music</h2>
             <p>Web Site "Blue Music", que utilizei para treinar habilidades em HTML e CSS. A página ainda está em
                 construção e receberá atualizações constantes conforme a evolução dos meus conhecimentos.
@@ -85,7 +85,7 @@
                 <a href="https://github.com/Thialves02/BlueMusic" target="_blank"><button>Veja mais</button></a>
         </div>
         <div>
-            <img src="assets/img/calculadora.png">
+            <img src="static/img/calculadora.png">
             <h2>Calculadora</h2>
             <p>Projeto para por os ensinamentos do módulo 2 da Blue Edtech sobre programação Web em prática. Nessá página foram utilizados HTML,
                 CSS e Javascript. A calculadora conta com todas as funções básicas de uma calculadora (Soma, divisão, multiplicação e subtração) 
@@ -94,7 +94,7 @@
             <a href="https://github.com/Thialves02/calculadora" target="_blank"><button>Veja mais</button></a>
         </div>
         <div>
-            <img src="assets/img/to_do_list.png">
+            <img src="static/img/to_do_list.png">
             <h2>To do list</h2>
             <p>Projeto do lista de tarefas "To do list" feito com intuito de treinar meus conhecimentos, facilitar e organizar as tarefas do dia a dia.
                 A página foi montada com HTML5,CSS3 
@@ -176,7 +176,7 @@
 
             <h3>Mande uma mensagem</h3>
    
-            <form action="">
+            <form action="/send" method="POST">
    
                <label for="nome">Nome</label>
                <input id="nome" name="nome" type="text">
@@ -208,7 +208,7 @@
       AOS.init();
     </script>
   
-    <script src="assets/js/main.js"></script>
+    <script src="static/js/main.js"></script>
 </body>
 
 </html>
