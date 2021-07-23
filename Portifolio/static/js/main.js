@@ -3,6 +3,7 @@ let inputEmail = document.querySelector('#email')
 let textareaMensagem = document.querySelector('#mensagem')
 let btnEnviar = document.querySelector('#enviar')
 let checkbox = document.querySelector('#fs')
+let btn_Menu = document.querySelector('#btnMenu')
 
 inputNome.addEventListener('keyup',() =>{
     if(inputNome.value.length < 2){
@@ -37,6 +38,7 @@ checkbox.addEventListener('change',()=>{
         document.querySelector('body').style.color = '#ddd'
         document.querySelector('p').style.color = '#ddd'
         document.querySelector('span').style.color = '#ddd'
+        
     }
     else{
         document.querySelector('body').style.backgroundColor = '#fff'
@@ -44,8 +46,17 @@ checkbox.addEventListener('change',()=>{
         document.querySelector('body').style.color = 'black'
         document.querySelector('p').style.color = '#3359ec'
         document.querySelector('span').style.color = '#3359ec'
+        
     }
     
+})
+
+btn_Menu.addEventListener('change',()=>{
+    if(btn_Menu.checked){
+        document.querySelector('#ul-id').style.display = 'block'
+    }else{
+        document.querySelector('#ul-id').style.display = 'none'
+    }
 })
 
 btnEnviar.addEventListener('click', () => {
@@ -57,5 +68,5 @@ btnEnviar.addEventListener('click', () => {
     /* Pega o Form */
     let form = document.querySelector('form')
     /* Esconde o Form, mudando o display pra 'none' */
-    form.style.display = 'none'
+    document.querySelector('#form').style.display = 'none'
  })
