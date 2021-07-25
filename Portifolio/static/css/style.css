@@ -455,10 +455,10 @@ footer div#rodape h1{
 }
 
 .flipswitch {
-   position: relative;
+   position: absolute;
    width: 80px;
    margin-top: 14px;
-   
+   margin-left:90% ;
  }
  .flipswitch input[type=checkbox] {
    display: none;
